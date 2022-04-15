@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(28, 111, 236);
+}
+.mainBox{
+    background: #fff;
+    max-width: 450px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    height: 251px;
+    transition: all 0.25s ease;
+}
+header {
+    height: 70px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+header h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 1000;
+    letter-spacing: 5px;
+    margin-bottom: -1px;
+    /* margin-left: 15px; */
+}
+header span{
+    font-size: 14px;
+    padding-left: 50px;
+    color: rgb(128, 125, 125);
+    position: absolute;
+    /* margin-bottom: 90px; */
+}
+hr{
+    background-color: blue;
+    height: 2px;
+    /* margin-bottom: 20px; */
+
+}
+.searchBar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    position: relative;
+}
+#searchInput{
+    min-height: 45px;
+    padding: 0px 55px;
+    font-size: 18px;
+    border-radius: 6px;
+    outline: none;
+    /* z-index: 0; */
+}
+#searchInput:focus{
+    border: 2px solid blue;
+}
+.searchBar i{
+    position: relative;
+    left: 20px;
+    top: -30px;
+    font-size: 20px;
+    /* border: 2px solid blue; */
+    width: 10px;
+    color: rgb(92, 91, 89);
+    /* z-index: 100; */
+}
+.fa-times:before {
+    content: "\f00d";
+    position: relative;
+    right: -334px;
+    top: -20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+ul{
+    margin-top: -30px;
+    /* border: 2px solid black; */
+    pointer-events: none;
+    opacity: 0;
+}
+ul li{
+    list-style: none;
+    padding: 10px 20px ;
+}
+.box{
+    border-left: 4px solid blue;
+    border-radius: 4px 0 0 4px;
+    padding: 0px 7px;
+    max-width: 500px;
+    /* position: fixed; */
+}
+.list{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    border-radius: 0px 20px 15px 5px;
+}
+.text{
+    /* border: 2px solid yellow; */
+    /* background-color: rgb(231, 243, 246); */
+    border-radius: 6px;
+    padding: 8px 7px;
+}
+.dictionaryInfo{
+    /* border: 2px solid blue; */
+    /* background-color: rgb(225, 223, 223); */
+    border-radius: 6px;
+}
+.wordSpeaker{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(231, 243, 246);
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+/* .fa, .fas {
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    width: 30px;
+} */
+.wordSpeaker i {
+    display: flex;
+    align-items: center;
+    width: 36px;
+    color: rgb(92, 91, 89);
+    font-size: 18px;
+}
+.wordSpeaker .word p{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    /* color: blue; */
+    /* color: white; */
+}
+.wordSpeaker .word span{
+    font-size: 14px;
+    font-family: 'Source Code Pro', monospace;
+}
+.box p{
+    font-size: 22px;
+    font-weight: 600;
+}
+.box span{
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    /* color: blue; */
+    color: rgb(138, 134, 134);
+    line-height: 10px;
+    /* border: 2px solid green; */
+
+}
+.synoList span{
+    /* text-decoration: underline; */
+    font-size: 17px;
+    cursor: pointer;
+    color: blue;
+    padding: 0px 5px;
+    /* text-decoration: underline; */
+}
+/* ul .dictionaryInfo{
+    max-height: 180px;
+    overflow: hidden;
+    overflow-y: scroll;
+} */
+
+.infoText{
+    max-width: 400px;
+    padding: 20px 10px;
+    position: relative;
+    top: -8%;
+    font-size: 16px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 500;
+    color: rgb(92, 91, 89);
+    line-height: 19px;
+}
+
+.active{
+    background: #fff;
+    max-width: 450px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    height: 451px;   
+    transition: all 0.4s ease;
+}
+.active ul{
+    opacity: 1;
+    pointer-events: all;
+} 
+.active ul .dictionaryInfo{
+    max-height: 180px;
+    overflow: hidden;
+    overflow-y: scroll;   
+    min-width: 390px;
+}
+.active .infoText{
+    display: none;
+}
+.active .fa-times:before {
+    content: "\f00d";
+    position: relative;
+    right: -334px;
+    top: -20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.mainBox .fa-times:before{
+    display: none;
+}

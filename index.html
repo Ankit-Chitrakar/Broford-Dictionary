@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All in One Dictionary - By Ankit Chitrakar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="mainBox">
+        <header>
+            <h1>Broford Dictionary</h1>
+            <span><i>~ Here you can seach any Word's Meaning</i></span>
+        </header>
+        <hr>
+        <div class="searchBar">
+            <input type="text" name="search" id="searchInput" placeholder="Search a Word">
+            <i class="fas fa-search"></i>
+            <i id="close" class="fas fa-times"></i>
+            <!-- <span class="material-icons">close</span> -->
+        </div>
+        <div class="infoText">
+            <i>Type any existing word and press enter to get meaning, example, synonyms, etc.</i>
+        </div>
+        <ul>
+            <div class="content">
+                <div class="wordSpeaker">
+                    <li class="word">
+                        <p>__</p>
+                        <span id="wordSpan">___</span>
+                    </li>
+                    <i id="volume" class="fas fa-volume-up"></i>
+                </div>
+                <div class="dictionaryInfo">
+                    <li class="meaning">
+                        <div class="list">
+                            <div class="box">
+                                <div class="text">
+                                    <p>Meaning</p>
+                                    <span id="meaningSpan">___</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="example">
+                        <div class="list">
+                            <div class="box">
+                                <div class="text">
+                                    <p>Example</p>
+                                    <span id="exampleSpan">__ __</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="synonyms">
+                        <div class="list">
+                            <div class="box">
+                                <div class="text">
+                                    <p>Synonyms</p>
+                                    <div class="synoList">__</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </div>
+
+        </ul>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
